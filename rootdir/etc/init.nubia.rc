@@ -396,3 +396,9 @@ service vendor.sensors-hal-2-0-multihal /vendor/bin/hw/android.hardware.sensors@
 	task_profiles ServiceCapacityLow
 	capabilities BLOCK_SUSPEND
 	rlimit rtprio 10 10
+
+service vendor.adsprpcd /vendor/bin/adsprpcd
+   class main
+   user system
+   group media
+   disabled
