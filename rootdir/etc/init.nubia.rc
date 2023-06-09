@@ -427,3 +427,9 @@ on property:vendor.qti.nfc.supported=true
 
 on property:ro.boot.product.hardware.sku=nfc
 	start nfc_hal_service
+
+service vendor.adsprpcd /vendor/bin/adsprpcd
+   class main
+   user system
+   group media
+   disabled
