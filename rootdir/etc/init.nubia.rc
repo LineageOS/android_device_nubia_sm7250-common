@@ -79,6 +79,19 @@ on boot
     chown system system /sys/kernel/lcd_enhance/nubia_panel_reg
     chmod 666 /sys/kernel/lcd_enhance/fps_change
 
+    # nubia multicolor led
+    chown system system /sys/class/leds/aw22xxx_led/reg
+    chown system system /sys/class/leds/aw22xxx_led/hwen
+    chown system system /sys/class/leds/aw22xxx_led/fw
+    chown system system /sys/class/leds/aw22xxx_led/cfg
+    chown system system /sys/class/leds/aw22xxx_led/effect
+    chown system system /sys/class/leds/aw22xxx_led/imax
+    chown system system /sys/class/leds/aw22xxx_led/rgb
+    chown system system /sys/class/leds/aw22xxx_led/task0
+    chown system system /sys/class/leds/aw22xxx_led/task1
+    chown system system /sys/class/leds/aw22xxx_led/brightness
+    chown system system /sys/class/leds/aw22xxx_led/max_brightness
+
     # touchkey
     chown system system /sys/devices/platform/soc/880000.i2c/i2c-0/0-0010/key_signal
     chown system system /sys/devices/platform/soc/880000.i2c/i2c-0/0-0010/firm_version
