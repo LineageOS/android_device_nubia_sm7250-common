@@ -26,8 +26,6 @@ $(call inherit-product, vendor/nubia/sm7250-common/sm7250-common-vendor.mk)
 # Inherit display makefiles
 $(call inherit-product, hardware/qcom-caf/sm8250/display/config/display-board.mk)
 
--include $(LOCAL_PATH)/properties.mk
-
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
