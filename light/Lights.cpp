@@ -145,14 +145,10 @@ static void handleNotification(const HwLightState& state) {
                 set(BLUE_LED LED_BREATH_FEATURE, BACK_LOGO_LED_BREATH);
             }
             /* Enable breathing */
-            if (!!red)
-                set(RED_LED LED_BREATH, 1);
+            set(RED_LED LED_BRIGHTNESS, 0);
+            set(BLUE_LED LED_BRIGHTNESS, 0);
 
-            if (!!green)
-                set(GREEN_LED LED_BREATH, 1);
-
-            if (!!blue)
-                set(BLUE_LED LED_BREATH, 1);
+            set(GREEN_LED LED_BREATH, 1);
             break;
         case FlashMode::TIMED:
             if (GetProperty("ro.product.vendor.device", "") == "NX651J-EEA") {
@@ -160,17 +156,11 @@ static void handleNotification(const HwLightState& state) {
                 set(BLUE_LED LED_BREATH_FEATURE, BACK_LOGO_LED_BREATH);
             }
             /* Enable blinking */
-            if (!!red)
-                set(RED_LED LED_DELAY_ON, state.flashOnMs);
-                set(RED_LED LED_DELAY_OFF, state.flashOffMs);
+            set(RED_LED LED_BRIGHTNESS, 0);
+            set(BLUE_LED LED_BRIGHTNESS, 0);
 
-            if (!!green)
-                set(GREEN_LED LED_DELAY_ON, state.flashOnMs);
-                set(GREEN_LED LED_DELAY_OFF, state.flashOffMs);
-
-            if (!!blue)
-                set(BLUE_LED LED_DELAY_ON, state.flashOnMs);
-                set(BLUE_LED LED_DELAY_OFF, state.flashOffMs);
+            set(GREEN_LED LED_DELAY_ON, state.flashOnMs);
+            set(GREEN_LED LED_DELAY_OFF, state.flashOffMs);
             break;
         case FlashMode::NONE:
         default:
