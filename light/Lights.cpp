@@ -140,7 +140,7 @@ static void handleNotification(const HwLightState& state) {
 
     switch (state.flashMode) {
         case FlashMode::HARDWARE:
-            if (GetProperty("ro.product.vendor.device", "") == "NX651J-EEA") {
+            if (GetProperty("ro.boot.hwc", "") == "EN") {
                 set(BACK_STRIP EFFECT_FILE, BACK_STRIP_NOTIFICATION);
                 set(BLUE_LED LED_BREATH_FEATURE, BACK_LOGO_LED_BREATH);
             }
@@ -151,7 +151,7 @@ static void handleNotification(const HwLightState& state) {
             set(GREEN_LED LED_BREATH, 1);
             break;
         case FlashMode::TIMED:
-            if (GetProperty("ro.product.vendor.device", "") == "NX651J-EEA") {
+            if (GetProperty("ro.boot.hwc", "") == "EN") {
                 set(BACK_STRIP EFFECT_FILE, BACK_STRIP_NOTIFICATION);
                 set(BLUE_LED LED_BREATH_FEATURE, BACK_LOGO_LED_BREATH);
             }
@@ -169,7 +169,7 @@ static void handleNotification(const HwLightState& state) {
                 set(GREEN_LED LED_BRIGHTNESS, 0);
                 set(BLUE_LED LED_BRIGHTNESS, 0);
                 set(RED_LED LED_BRIGHTNESS, red);
-                if (GetProperty("ro.product.vendor.device", "") == "NX651J-EEA") {
+                if (GetProperty("ro.boot.hwc", "") == "EN") {
                     set(BACK_STRIP EFFECT_FILE, BACK_STRIP_BATTERY_CHARGING);
                     set(BLUE_LED LED_BREATH_FEATURE, BACK_LOGO_LED_ON);
                 }
@@ -177,7 +177,7 @@ static void handleNotification(const HwLightState& state) {
                 set(RED_LED LED_BRIGHTNESS, 0);
                 set(BLUE_LED LED_BRIGHTNESS, 0);
                 set(GREEN_LED LED_BRIGHTNESS, green);
-                if (GetProperty("ro.product.vendor.device", "") == "NX651J-EEA") {
+                if (GetProperty("ro.boot.hwc", "") == "EN") {
                     set(BACK_STRIP EFFECT_FILE, BACK_STRIP_BATTERY_FULL);
                     set(BLUE_LED LED_BREATH_FEATURE, BACK_LOGO_LED_ON);
                 }
@@ -185,7 +185,7 @@ static void handleNotification(const HwLightState& state) {
                 set(RED_LED LED_BRIGHTNESS, 0);
                 set(GREEN_LED LED_BRIGHTNESS, 0);
                 set(BLUE_LED LED_BRIGHTNESS, 0);
-                if (GetProperty("ro.product.vendor.device", "") == "NX651J-EEA") {
+                if (GetProperty("ro.boot.hwc", "") == "EN") {
                     set(BACK_STRIP EFFECT_FILE, BACK_STRIP_OFF);
                     set(BLUE_LED LED_BREATH_FEATURE, BACK_LOGO_LED_OFF);
                 }
