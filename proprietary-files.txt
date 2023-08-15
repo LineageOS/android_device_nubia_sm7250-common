@@ -1266,6 +1266,10 @@ vendor/etc/media_profiles_vendor.xml
 vendor/etc/media_profiles.xml
 vendor/etc/system_properties.xml
 
+# NFC firmware
+vendor/firmware/sec_s3nrn81_firmware.bin
+vendor/firmware/sec_s3nrn81_rfreg.bin
+
 # NPU
 vendor/bin/npu_launcher
 vendor/lib/libhta_hexagon_runtime.so
