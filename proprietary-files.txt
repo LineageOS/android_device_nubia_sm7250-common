@@ -7,7 +7,6 @@ vendor/bin/loadalgo
 vendor/etc/init/vendor.qti.adsprpc-service.rc
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libcdsp_default_listener.so
-vendor/lib/libadsprpc.so
 vendor/lib/libcdsprpc.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libsdsprpc.so
@@ -16,7 +15,6 @@ vendor/lib/libssc_default_listener.so
 vendor/lib/libsysmon_cdsp_skel.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libadsprpc.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libloadalgo_stub.so
 vendor/lib64/libmdsprpc.so
@@ -24,6 +22,10 @@ vendor/lib64/libsdsprpc.so
 vendor/lib64/libsns_registry_skel.so
 vendor/lib64/libssc_default_listener.so
 vendor/lib64/libsysmon_cdsp_skel.so
+
+# ADSPRPC - from NX651J-user 10 QKQ1.200503.002 nubia.20220228.184335
+vendor/lib/libadsprpc.so|50f8fdffaecd3e1b8cec5fcb30d0d9e28cfb78e9
+vendor/lib64/libadsprpc.so|fde8ef25f0eb2d21cb8a62ae9467edee90939f65
 
 # ADSP Modules
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
