@@ -1,1 +1,2 @@
 vendor_restricted_prop(vendor_fingerprint_prop);
+vendor_restricted_prop(hwc_prop);
