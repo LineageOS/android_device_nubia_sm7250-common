@@ -403,7 +403,7 @@ PRODUCT_PACKAGES += \
 
 # Trustzone
 PRODUCT_PACKAGES += \
-    libstdc++.vendor \
+    libstdc++_vendor \
     vendor.qti.hardware.systemhelper@1.0.vendor
 
 # USB
