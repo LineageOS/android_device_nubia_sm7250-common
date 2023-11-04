@@ -943,10 +943,6 @@ vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libopenvx.so
 
 # Fingerprint
-vendor/lib/hw/fingerprint.default.so:vendor/lib/hw/fingerprint.goodix_fod.lito.so|7c566aab37fd712f1328a6cd8da6f29e82400814
-vendor/lib/libgf_hal.so
-vendor/lib/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
-vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.goodix_fod.lito.so|69ce38dff8eb3fedc02fd2dd4ade04e0fe4dfb1f
 vendor/lib64/libgf_hal.so
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
